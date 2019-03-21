@@ -1,0 +1,89 @@
+Creature
+    Animal
+        Ground
+            Mammal
+                Anthropoid
+                    Human
+                        Male
+                            Albert Einstein
+                            Nikola Tesla
+                        Female
+                            Grace Hopper
+                            Stephanie Kwolek
+                            Marie Curie
+                                Lived
+                                    1867
+                                    1934
+                                Description
+                                    Polish physicist
+                                Number of Nobel Prizes
+                                    2
+                        Male
+                            Isaac Newton
+                    Monkey
+                        Orangutan
+                            Charlie
+                            Mambo Jambo
+            Bird
+                parrot
+                    Gyurika
+                Rat
+                    Urban
+                    Dove
+        Aquatic
+            Fish
+                Salmon
+                Carp
+            Mammal
+                Whale
+                    Blue whale
+    Mushroom
+        Edible
+            Agaricus
+            Wood ear
+        Toxic
+            Amanita phalloides
+    Plant
+        Domesticated plants
+            Apple tree
+            Tomato
+            Pepper
+            Pear tree
+            Bamboo
+                small
+                medium
+                giant
+    Bacterium
+Lifeless
+    Stone
+        Mineral
+            jade
+            Sapphire
+            Ruby
+        Gravel
+    Man made object
+        Vehicle
+            Ground
+                Car
+                    Color
+                        Red
+                        Black
+                        White
+                        Yellow
+                        Blue
+                        Gray
+                    Üzemanayag
+                        Petrol
+                        Diesel
+                        LPG
+                        Electronic
+            Air
+                Airplane
+                Helicopter
+            Aquatic
+                Sailboat
+                Oceanboat
+Creature
+    Mushroom
+        Edible
+            Parasol
