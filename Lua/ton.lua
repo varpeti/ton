@@ -1,4 +1,4 @@
---[[ https://github.com/varpeti/tabl
+--[[
 MIT License
 
 Copyright (c) 2018 Váraljai Péter

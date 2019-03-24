@@ -1,10 +1,10 @@
 local ton = require("ton")
 require("tabl") -- toString
 
-local eq1 = ton.read("testEQ1.ton")
+local eq1 = ton.read("../tests/testEQ1.ton")
 local s1  = table.toString(eq1)
 
-local eq2 = ton.read("testEQ2.ton")
+local eq2 = ton.read("../tests/testEQ2.ton")
 local s2  = table.toString(eq2)
 
 local function split(inputstr, sep)
@@ -46,7 +46,7 @@ for i2,v2 in ipairs(eq2) do
     assert(match,"No pair: "..v2)
 end
 
-local test = ton.read("test.ton")
+local test = ton.read("../tests/test.ton")
 
 --             same as ["Animal"]["Ground"]                                            evry data is represented as a table
 test["Creature"].Animal.Ground["Mammal"]["Anthropoid"].Human.Male["Albert Einstein"]={["Description"]={["German physicist"]={}},["Lived"]={[1879]={},[1955]={}}}
