@@ -1,0 +1,1 @@
+/cygdrive/c/_privat/cygwinGoods/makefile
