@@ -29,7 +29,7 @@ function ton.read(filename)
     file = io.open(filename, "r")
     local raw = file:read("*a")
     file:close()
-    return ton.prase(raw)
+    return ton.parse(raw)
 end
 
 local function split(inputstr, sep)
@@ -41,7 +41,7 @@ local function split(inputstr, sep)
         return t
 end
 
-function ton.prase(raw)
+function ton.parse(raw)
     local lines = split(raw,"\n")
 
     local stack = {}
@@ -51,7 +51,7 @@ function ton.prase(raw)
     
     local last = -1
     for i,line in ipairs(lines) do
-        local t, value =  string.match(line,"^([\t ]*)([^\t ].*)$")
+        local t, value =  string.match(line,"^([\t ]*)([^\t ][^\r]*)[\r]*$") -- (spaces/tabs)(data)(fkwindows endline)
         t = t:len()
         --print(t,value)
 
@@ -63,7 +63,6 @@ function ton.prase(raw)
             while #stack>0 and stack[#stack]>t do
                 table.remove(stack,#stack)
             end
-        else
         end
         last = t
 
